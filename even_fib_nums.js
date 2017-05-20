@@ -6,7 +6,18 @@
  * @return {Number} sum
  */
 function _sumFibs( maxFibValue ) {
+  var a = 0;
+  var b = 1;
+  var f = 1;
   var sum = 0;
+
+  for (var i = 2; i <= maxFibValue; i++) {
+    f = a + b;
+    a = b;
+    b = f;
+
+  console.log(f);
+  }
 
   // do your work here
 
